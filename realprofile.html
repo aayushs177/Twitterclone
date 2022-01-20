@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="utf-8">
+         <title>Twitter</title>
+         <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
+         <link href="index.css" rel="stylesheet">
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+         <script
+             src="https://code.jquery.com/jquery-3.2.1.min.js"
+             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+             crossorigin="anonymous"></script>
+         <script src="profile.js"></script>
+     </head>
+     <body style="background-image: url(twitter2.png)" class="segoe" style="background: rgb(230, 236, 240);">
+    
+         <h2>
+             <a href=twitterlogin.html>LOG OUT</a>
+         </h2>
+         <div>
+             <div class="wallcontainer">
+                 <div class="profilecard">
+                     <div class="profilecardhead"></div>
+                     <div class="profilecardimagediv">
+                         <img src="https://yt3.ggpht.com/ytc/AAUvwniIJZOZ0hXLQfdvZL2QCE2Bc3JK1Vv15Qz986Xp=s88-c-k-c0x00ffffff-no-rj">
+                     </div>
+
+                     <div class="profilecardnameidcont">
+                         <div class="profilecardnamecont">
+                             <span id="profilecardname"></span>
+                         </div>
+                         <span id="profilecarduid"></span>
+                     </div>
+
+                     <h2 atyle = "text-align: center">Aayushs177 ✔</h2>
+                     <div class="profilecardstatsdiv">
+                         <ul class="profilecardstatslist">
+                             <li class="profilecardstatslistitem">                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Tweets</span>
+                                     <span id="statslistitemcount" class="statslistitemcount">12</span>
+                                 </span>
+                             </li>
+                             <li class="profilecardstatslistitem">
+                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Following</span>
+                                     <span class="statslistitemcount">3</span>
+                                 </span>
+                             </li>
+
+                             <li class="profilecardstatslistitem">
+                                 <span class="dispblk">
+                                     <span class="statslistitemhead">Followers</span>
+                                        <span class="statslistitemcount">5.6M</span>
+                                 </span>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+
+
+                 <div class="rightcontainer">
+                     <div class="posttweetcontainer">
+                         <img class="posttweetprofimg" src="https://yt3.ggpht.com/ytc/AAUvwniIJZOZ0hXLQfdvZL2QCE2Bc3JK1Vv15Qz986Xp=s88-c-k-c0x00ffffff-no-rj">
+                         <div class="ml56px">
+                             <div class="posttweettacontainer">
+                                 <textarea id="posttweetta" class="posttweetta" placeholder="What's happening, aayushs177?"></textarea>
+                        
+                                 <div class="posttweetcountcont">
+                                     <div class="prompt span"><span class="posttweetcount"><span id="totalchars">0</span>/250</span></div>
+                                 </div>
+                             </div>
+                             <div class="posttweetbutcont">
+                                 <button style=id="posttweetbut" class="posttweetbut">Tweet</button>
+                             </div>
+                         </div>
+                     </div>
+                     <div>
+                         <ul id="tweetscontainer" class="tweetscontainer">
+
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </body>
+</html>
